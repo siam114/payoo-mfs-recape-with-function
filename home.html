@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo MFS Recape</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+
+    <main class="flex justify-center">
+
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-3">
+
+                <!-- account balance -->
+                <div class="stats shadow">
+                    <div class="stat">
+                        <div id="account-balance" class="stat-value">9400</div>
+                        <div class="stat-title text-center">Total Amount</div>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+                 
+                  <!-- button -->
+
+                  <div class="space-x-5">
+                    <button id="show-add-money-form" class="btn btn-outline btn-success">Add Money</button>
+                    <button id="show-cash-out-form" class="btn btn-outline btn-success">Cash Out</button>
+                    <button id="show-transection-form" class="btn btn-outline btn-success">Transection</button>
+                  </div>
+
+                <div class="divider"></div>
+
+                <!-- add money form start -->
+
+
+                <div id="add-money-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Phone</span>
+                        </label>
+                        <input id="input-add-money" type="text" placeholder="Your Phone Number" class="input input-bordered" required />
+                      </div>
+
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin</span>
+                        </label>
+                        <input id="input-pin-number" type="password" placeholder="Your Pin Number" class="input input-bordered" required />
+                      </div>
+
+                      <div class="form-control mt-6">
+                        <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+                      </div>
+                    </form>
+                  </div>
+
+                <!-- add money form end -->
+
+                <!-- add cash out form -->
+
+                <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Phone</span>
+                        </label>
+                        <input id="input-cash-out" type="text" placeholder="Your Phone Number" class="input input-bordered" required />
+                      </div>
+
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin</span>
+                        </label>
+                        <input id="input-cash-out-pin" type="password" placeholder="Your Pin Number" class="input input-bordered" required />
+                      </div>
+
+                      <div class="form-control mt-6">
+                        <button id="btn-cash-out" class="btn btn-primary">Cash Out</button>
+                      </div>
+                    </form>
+                  </div>
+
+                <!-- end cash out form -->
+                 <!-- transcetion start -->
+                  <div id="transection-section" class="hidden">
+                    <h2 class="text-4xl font-bold text-center">Transection History</h2>
+                    <div id="transection-container">
+
+                    </div>
+                  </div>
+                 <!-- transcetion end -->
+
+              </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/utilities.js"></script>
+   <script src="js/addMoney2.js"></script>
+   <script src="js/cashOut.js"></script>
+   <script src="js/feature.js"></script>
+  </body>
+</html>
